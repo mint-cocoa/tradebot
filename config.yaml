@@ -1,0 +1,128 @@
+# Crypto-DLSA Bot Configuration File
+
+data:
+  # API Keys (set in environment variables for security)
+  # binance_api_key: ""
+  # binance_secret_key: ""
+  # coingecko_api_key: ""
+  # glassnode_api_key: ""
+  # dune_api_key: ""
+  
+  # Default trading symbols
+  default_symbols:
+    - "BTCUSDT"
+    - "ETHUSDT"
+    - "ADAUSDT"
+    - "DOTUSDT"
+    - "LINKUSDT"
+    - "LTCUSDT"
+    - "BCHUSDT"
+    - "XLMUSDT"
+    - "EOSUSDT"
+    - "TRXUSDT"
+  
+  # Timeframes for data collection
+  default_timeframes:
+    - "1h"
+    - "4h"
+    - "1d"
+  
+  # Data collection settings
+  max_retries: 3
+  retry_delay: 1.0
+  rate_limit_delay: 0.1
+  
+  # Storage settings
+  data_directory: "./data"
+  use_parquet: true
+  compression: "snappy"
+
+model:
+  # CNN+Transformer architecture
+  input_dim: 10
+  seq_length: 60
+  hidden_dim: 256
+  num_heads: 8
+  num_layers: 6
+  dropout_rate: 0.1
+  
+  # Training parameters
+  batch_size: 32
+  learning_rate: 0.001
+  num_epochs: 100
+  early_stopping_patience: 10
+  validation_split: 0.2
+  
+  # Loss function configuration
+  loss_function: "sharpe_ratio"
+  risk_free_rate: 0.02
+  
+  # Model storage
+  model_directory: "./models"
+  checkpoint_frequency: 10
+
+factor:
+  # Factor calculation parameters
+  lookback_window: 252
+  min_periods: 60
+  
+  # PCA configuration
+  n_components: 5
+  use_incremental_pca: true
+  pca_batch_size: 1000
+  
+  # Factor names
+  factor_names:
+    - "market_factor"
+    - "size_factor"
+    - "momentum_factor"
+    - "volatility_factor"
+    - "nvt_factor"
+  
+  # Residual calculation
+  residual_window: 252
+  min_residual_periods: 60
+
+backtest:
+  # Portfolio parameters
+  initial_capital: 100000.0
+  max_position_size: 0.1
+  min_position_size: 0.01
+  
+  # Rebalancing frequency
+  rebalance_frequency: "daily"
+  
+  # Transaction costs
+  trading_fee_rate: 0.001
+  slippage_rate: 0.0005
+  gas_cost_usd: 5.0
+  
+  # Risk management
+  max_leverage: 1.0
+  stop_loss_threshold: -0.05
+  max_drawdown_threshold: -0.20
+  
+  # Benchmark
+  benchmark_symbol: "BTCUSDT"
+  risk_free_rate: 0.02
+
+system:
+  # Logging configuration
+  log_level: "INFO"
+  log_directory: "./logs"
+  
+  # Database
+  database_url: "sqlite:///crypto_dlsa.db"
+  
+  # Redis cache
+  redis_host: "localhost"
+  redis_port: 6379
+  redis_db: 0
+  
+  # Performance settings
+  num_workers: 4
+  use_gpu: true
+  gpu_device: "cuda:0"
+  
+  # Security
+  encrypt_api_keys: true
