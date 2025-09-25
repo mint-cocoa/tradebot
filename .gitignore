@@ -49,6 +49,7 @@ logs/
 *.parquet
 *.png
 *.pdf
+binance-public-data/
 
 # Data & models (keep repo lightweight)
 data/
