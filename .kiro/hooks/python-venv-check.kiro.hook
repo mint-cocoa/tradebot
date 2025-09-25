@@ -1,0 +1,19 @@
+{
+  "enabled": true,
+  "name": "Python 가상환경 확인",
+  "description": "Python이 설치되어있지 않다는 에러가 발생했을 때 가상환경이 제대로 활성화되어 있는지 확인합니다 이떄 uv 를 이용해서 의존성 설치를 진행한다.",
+  "version": "1",
+  "when": {
+    "type": "userTriggered",
+    "patterns": [
+      "*.py",
+      "requirements.txt",
+      "setup.py",
+      "setup_env.sh"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Python 실행 에러가 발생했습니다. 다음을 확인해주세요: 1) 가상환경이 활성화되어 있는지 확인 (source crypto-dlsa-env/bin/activate 또는 crypto-dlsa-env\\Scripts\\activate) 2) 가상환경에 Python이 설치되어 있는지 확인 3) requirements.txt의 의존성이 설치되어 있는지 확인 4) setup_env.sh 스크립트가 정상적으로 실행되었는지 확인. 현재 작업 디렉토리와 가상환경 상태를 점검하고 해결 방안을 제시해주세요."
+  }
+}

@@ -1,0 +1,60 @@
+# Core dependencies
+pandas>=1.5.0
+numpy>=1.21.0
+scipy>=1.9.0
+scikit-learn>=1.1.0
+
+# Data collection
+requests>=2.28.0
+python-binance>=1.0.16
+pycoingecko>=3.1.0
+ccxt>=2.0.0
+
+# Machine Learning
+torch>=1.12.0
+torchvision>=0.13.0
+transformers>=4.21.0
+
+# Factor Models
+ipca>=0.1.0
+
+# Statistical Analysis
+statsmodels>=0.13.0
+
+# Data processing
+pyarrow>=9.0.0
+fastparquet>=0.8.3
+h5py>=3.7.0
+
+# Database
+sqlalchemy>=1.4.0
+alembic>=1.8.0
+redis>=4.3.0
+
+# Configuration
+pyyaml>=6.0
+python-dotenv>=0.20.0
+pydantic>=1.10.0
+
+# Visualization
+matplotlib>=3.5.0
+seaborn>=0.11.0
+plotly>=5.10.0
+streamlit>=1.12.0
+
+# Testing
+pytest>=7.1.0
+pytest-cov>=3.0.0
+pytest-asyncio>=0.19.0
+
+# Development
+black>=22.6.0
+flake8>=5.0.0
+mypy>=0.971
+pre-commit>=2.20.0
+
+# Utilities
+tqdm>=4.64.0
+joblib>=1.1.0
+python-dateutil>=2.8.0
+pytz>=2022.1

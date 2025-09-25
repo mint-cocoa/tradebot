@@ -1,0 +1,68 @@
+The panel dimensions are:
+n_samples: 2 , L: 11 , T: 5
+The panel dimensions are:
+n_samples: 2 , L: 11 , T: 6
+The panel dimensions are:
+n_samples: 2 , L: 11 , T: 7
+The panel dimensions are:
+n_samples: 2 , L: 11 , T: 8
+The panel dimensions are:
+n_samples: 2 , L: 11 , T: 9
+The panel dimensions are:
+n_samples: 2 , L: 11 , T: 10
+The panel dimensions are:
+n_samples: 2 , L: 11 , T: 10
+The panel dimensions are:
+n_samples: 2 , L: 11 , T: 10
+The panel dimensions are:
+n_samples: 2 , L: 11 , T: 10
+The panel dimensions are:
+n_samples: 2 , L: 11 , T: 10
+The panel dimensions are:
+n_samples: 2 , L: 11 , T: 10
+The panel dimensions are:
+n_samples: 2 , L: 11 , T: 10
+The panel dimensions are:
+n_samples: 2 , L: 11 , T: 10
+The panel dimensions are:
+n_samples: 2 , L: 11 , T: 10
+The panel dimensions are:
+n_samples: 2 , L: 11 , T: 10
+The panel dimensions are:
+n_samples: 2 , L: 11 , T: 10
+The panel dimensions are:
+n_samples: 2 , L: 11 , T: 10
+The panel dimensions are:
+n_samples: 2 , L: 11 , T: 10
+The panel dimensions are:
+n_samples: 2 , L: 11 , T: 10
+The panel dimensions are:
+n_samples: 2 , L: 11 , T: 10
+The panel dimensions are:
+n_samples: 2 , L: 11 , T: 10
+The panel dimensions are:
+n_samples: 2 , L: 11 , T: 10
+The panel dimensions are:
+n_samples: 2 , L: 11 , T: 10
+Residual rows: 0
+Empty DataFrame
+Columns: [date, symbol, residual]
+Index: []
+count       0
+unique      0
+top       NaN
+freq      NaN
+Name: residual, dtype: object
+
+Residual report:
+  total_observations: 0
+  n_symbols: 0
+  start_date: nan
+  end_date: nan
+  mean_autocorr_lag1: 0.0
+  mean_autocorr_lag5: 0.0
+  stationary_ratio: 0.0
+  mean_jb_pvalue: 0.0
+  good_autocorr_ratio: 0.0
+  outlier_ratio: nan
+  quality_score: 0.0
